@@ -1,0 +1,17 @@
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\NUnit3.TestAdapter.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\NUnit3.TestAdapter.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\nunit.engine.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\nunit.engine.api.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\SharpGL.SceneGraph.Tests.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\SharpGL.SceneGraph.Tests.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\nunit.framework.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\System.Drawing.Common.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\SharpGL.SceneGraph.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\SharpGL.SceneGraph.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\bin\Debug\net472\SharpGL.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\obj\Debug\net472\SharpGL.SceneGraph.Tests.csprojAssemblyReference.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\obj\Debug\net472\SharpGL.SceneGraph.Tests.csproj.CoreCompileInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\obj\Debug\net472\SharpGL.SceneGraph.Tests.csproj.CopyComplete
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\obj\Debug\net472\SharpGL.SceneGraph.Tests.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph.Tests\obj\Debug\net472\SharpGL.SceneGraph.Tests.pdb

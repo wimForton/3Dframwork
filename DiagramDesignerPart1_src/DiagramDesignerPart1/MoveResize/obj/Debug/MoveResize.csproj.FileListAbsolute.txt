@@ -1,0 +1,15 @@
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\bin\Debug\MoveResize.exe
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\bin\Debug\MoveResize.pdb
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\MoveResize.csproj.AssemblyReference.cache
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\Window1.g.cs
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\App.g.cs
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\MoveResize_MarkupCompile.cache
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\MoveResize_MarkupCompile.lref
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\Window1.baml
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\MoveResize.g.resources
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\DiagramDesigner.Properties.Resources.resources
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\MoveResize.csproj.GenerateResource.cache
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\MoveResize.csproj.CoreCompileInputs.cache
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\MoveResize.exe
+H:\cursus_informatica\3Dapplication\DiagramDesignerPart1_src\DiagramDesignerPart1\MoveResize\obj\Debug\MoveResize.pdb

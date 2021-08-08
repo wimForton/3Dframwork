@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "mwXz4aiHDkecYnJTKGb19LE3X2USvXC0Qo+EJD+mI6ZgjzBQUYr66AQ1wPrH6jIv41idazEdWHplpUImV6r3CQ==",
+  "success": true,
+  "projectFilePath": "H:\\cursus_informatica\\3Dapplication\\wimapp3D\\Wimapp3D\\Wimapp3D.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wim\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\wim\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\wim\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

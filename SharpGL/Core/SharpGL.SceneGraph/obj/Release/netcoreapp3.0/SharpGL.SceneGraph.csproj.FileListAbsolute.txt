@@ -1,0 +1,14 @@
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\bin\Release\netcoreapp3.0\SharpGL.SceneGraph.deps.json
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\bin\Release\netcoreapp3.0\SharpGL.SceneGraph.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\bin\Release\netcoreapp3.0\SharpGL.SceneGraph.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\bin\Release\netcoreapp3.0\SharpGL.SceneGraph.xml
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\bin\Release\netcoreapp3.0\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\bin\Release\netcoreapp3.0\SharpGL.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\bin\Release\netcoreapp3.0\SharpGL.xml
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Release\netcoreapp3.0\SharpGL.SceneGraph.csprojAssemblyReference.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Release\netcoreapp3.0\SharpGL.SceneGraph.AssemblyInfoInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Release\netcoreapp3.0\SharpGL.SceneGraph.AssemblyInfo.cs
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Release\netcoreapp3.0\SharpGL.SceneGraph.csproj.CoreCompileInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Release\netcoreapp3.0\SharpGL.SceneGraph.csproj.CopyComplete
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Release\netcoreapp3.0\SharpGL.SceneGraph.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Release\netcoreapp3.0\SharpGL.SceneGraph.pdb

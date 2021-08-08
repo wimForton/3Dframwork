@@ -1,0 +1,62 @@
+﻿<Window x:Class="Wimapp3D.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wimapp3D"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1024" Background="#FF787878">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="350" />
+
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Content=" Obj loader " PreviewMouseLeftButtonDown="AddPolyObjectLoader" HorizontalAlignment="Left" 
+                    Margin="5,5,0,0" VerticalAlignment="Top" Height="20"
+                    Background="#FF303030" Foreground="White"/>
+            <Button Content=" Multiprim " PreviewMouseLeftButtonDown="AddMultiPrim" HorizontalAlignment="Left" 
+                    Margin="5,5,0,0" VerticalAlignment="Top" Height="20"
+                    Background="#FF303030" Foreground="White"/>
+            <Button Content=" Twist " PreviewMouseLeftButtonDown="AddTwist" HorizontalAlignment="Left" 
+                    Margin="5,5,0,0" VerticalAlignment="Top" Height="20"
+                    Background="#FF303030" Foreground="White"/>
+            <TextBlock x:Name="TimeText" Text ="FrameNr: " Foreground="White" Margin="10,5,0,0" FontSize = "15"/>
+        </StackPanel> 
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+            <Button Content=" Layout Nodes " PreviewMouseLeftButtonDown="LayoutNodes"
+                    Margin="5,5,5,0" VerticalAlignment="Top" Height="20"
+                    Background="#FF303030" Foreground="White" Grid.Column="1"/>
+            <Button Content=" Close proporties " PreviewMouseLeftButtonDown="ClearProportieStack"
+                    Margin="5,5,5,0" VerticalAlignment="Top" Height="20"
+                    Background="#FF303030" Foreground="White" Grid.Column="1"/>
+        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1" Grid.Column="1">
+            <StackPanel x:Name="ProportieWindowStack" Background="#FF616060" CanVerticallyScroll="True">
+            
+            </StackPanel>
+        </ScrollViewer>
+        <Canvas Grid.Row="1" x:Name="MainWindowCanvasConnections" Background="#FF2B2B2B" ClipToBounds="True" MouseMove="Canvas_MouseMove">
+            
+
+
+        </Canvas>
+
+        <Canvas Grid.Row="1" x:Name="MainWindowCanvas" ClipToBounds="True">
+
+
+
+        </Canvas>
+        <DockPanel  Background="#FF5B5B5B" x:Name="TimeSliderStack" Grid.Row="2" Grid.ColumnSpan="2">
+
+        </DockPanel>
+    </Grid>
+
+</Window>

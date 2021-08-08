@@ -1,0 +1,17 @@
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\bin\Debug\RadialBlurSample.exe.config
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\bin\Debug\RadialBlurSample.exe
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\bin\Debug\RadialBlurSample.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\bin\Debug\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\bin\Debug\SharpGL.SceneGraph.dll
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\bin\Debug\SharpGL.WinForms.dll
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\bin\Debug\SharpGL.SceneGraph.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\bin\Debug\SharpGL.WinForms.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\bin\Debug\SharpGL.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\obj\Debug\RadialBlurSample.csprojAssemblyReference.cache
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\obj\Debug\RadialBlurSample.FormRadialBlurSample.resources
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\obj\Debug\RadialBlurSample.Properties.Resources.resources
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\obj\Debug\RadialBlurSample.csproj.GenerateResource.cache
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\obj\Debug\RadialBlurSample.csproj.CoreCompileInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\obj\Debug\RadialBlurSample.csproj.CopyComplete
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\obj\Debug\RadialBlurSample.exe
+H:\cursus_informatica\openGL\source\SharpGL\Samples\WinForms\RadialBlurSample\obj\Debug\RadialBlurSample.pdb

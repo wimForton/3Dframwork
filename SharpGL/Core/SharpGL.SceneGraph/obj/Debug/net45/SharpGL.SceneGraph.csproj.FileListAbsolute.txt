@@ -1,0 +1,11 @@
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\bin\Debug\net45\SharpGL.SceneGraph.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\bin\Debug\net45\SharpGL.SceneGraph.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\bin\Debug\net45\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\bin\Debug\net45\SharpGL.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Debug\net45\SharpGL.SceneGraph.AssemblyInfoInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Debug\net45\SharpGL.SceneGraph.AssemblyInfo.cs
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Debug\net45\SharpGL.SceneGraph.csproj.CoreCompileInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Debug\net45\SharpGL.SceneGraph.csproj.CopyComplete
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Debug\net45\SharpGL.SceneGraph.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Debug\net45\SharpGL.SceneGraph.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.SceneGraph\obj\Debug\net45\SharpGL.SceneGraph.csproj.AssemblyReference.cache

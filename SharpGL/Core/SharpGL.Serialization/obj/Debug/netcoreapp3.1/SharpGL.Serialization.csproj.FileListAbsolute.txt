@@ -1,0 +1,14 @@
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\netcoreapp3.1\SharpGL.Serialization.deps.json
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\netcoreapp3.1\SharpGL.Serialization.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\netcoreapp3.1\SharpGL.Serialization.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\netcoreapp3.1\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\netcoreapp3.1\SharpGL.SceneGraph.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\netcoreapp3.1\SharpGL.SceneGraph.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\netcoreapp3.1\SharpGL.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\netcoreapp3.1\SharpGL.Serialization.AssemblyInfoInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\netcoreapp3.1\SharpGL.Serialization.AssemblyInfo.cs
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\netcoreapp3.1\SharpGL.Serialization.csproj.CoreCompileInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\netcoreapp3.1\SharpGL.Serialization.csproj.CopyComplete
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\netcoreapp3.1\SharpGL.Serialization.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\netcoreapp3.1\SharpGL.Serialization.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\netcoreapp3.1\SharpGL.Serialization.csproj.AssemblyReference.cache

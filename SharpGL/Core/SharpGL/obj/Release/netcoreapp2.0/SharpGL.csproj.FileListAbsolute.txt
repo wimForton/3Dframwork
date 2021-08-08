@@ -1,0 +1,10 @@
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\bin\Release\netcoreapp2.0\SharpGL.deps.json
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\bin\Release\netcoreapp2.0\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\bin\Release\netcoreapp2.0\SharpGL.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\bin\Release\netcoreapp2.0\SharpGL.xml
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\netcoreapp2.0\SharpGL.csprojAssemblyReference.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\netcoreapp2.0\SharpGL.AssemblyInfoInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\netcoreapp2.0\SharpGL.AssemblyInfo.cs
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\netcoreapp2.0\SharpGL.csproj.CoreCompileInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\netcoreapp2.0\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\netcoreapp2.0\SharpGL.pdb

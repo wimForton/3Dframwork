@@ -1,0 +1,9 @@
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\bin\Debug\netcoreapp3.1\SharpGL.deps.json
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\bin\Debug\netcoreapp3.1\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\bin\Debug\netcoreapp3.1\SharpGL.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Debug\netcoreapp3.1\SharpGL.AssemblyInfoInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Debug\netcoreapp3.1\SharpGL.AssemblyInfo.cs
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Debug\netcoreapp3.1\SharpGL.csproj.CoreCompileInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Debug\netcoreapp3.1\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Debug\netcoreapp3.1\SharpGL.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Debug\netcoreapp3.1\SharpGL.csproj.AssemblyReference.cache

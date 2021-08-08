@@ -1,0 +1,13 @@
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\net40\SharpGL.Serialization.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\net40\SharpGL.Serialization.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\net40\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\net40\SharpGL.SceneGraph.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\net40\SharpGL.SceneGraph.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\bin\Debug\net40\SharpGL.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\net40\SharpGL.Serialization.AssemblyInfoInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\net40\SharpGL.Serialization.AssemblyInfo.cs
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\net40\SharpGL.Serialization.csproj.CoreCompileInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\net40\SharpGL.Serialization.csproj.CopyComplete
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\net40\SharpGL.Serialization.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\net40\SharpGL.Serialization.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL.Serialization\obj\Debug\net40\SharpGL.Serialization.csproj.AssemblyReference.cache

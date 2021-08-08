@@ -1,0 +1,9 @@
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\bin\Release\net472\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\bin\Release\net472\SharpGL.pdb
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\bin\Release\net472\SharpGL.xml
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\net472\SharpGL.csprojAssemblyReference.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\net472\SharpGL.AssemblyInfoInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\net472\SharpGL.AssemblyInfo.cs
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\net472\SharpGL.csproj.CoreCompileInputs.cache
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\net472\SharpGL.dll
+H:\cursus_informatica\openGL\source\SharpGL\Core\SharpGL\obj\Release\net472\SharpGL.pdb

@@ -1,0 +1,13 @@
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\bin\Debug\wpf_draw_curve.exe
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\bin\Debug\wpf_draw_curve.pdb
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\obj\Debug\wpf_draw_curve.csproj.AssemblyReference.cache
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\obj\Debug\Window1.baml
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\obj\Debug\Window1.g.cs
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\obj\Debug\App.g.cs
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\obj\Debug\wpf_draw_curve_MarkupCompile.cache
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\obj\Debug\wpf_draw_curve.g.resources
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\obj\Debug\wpf_draw_curve.Properties.Resources.resources
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\obj\Debug\wpf_draw_curve.csproj.GenerateResource.cache
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\obj\Debug\wpf_draw_curve.csproj.CoreCompileInputs.cache
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\obj\Debug\wpf_draw_curve.exe
+H:\cursus_informatica\3Dapplication\wpf_draw_curve\obj\Debug\wpf_draw_curve.pdb

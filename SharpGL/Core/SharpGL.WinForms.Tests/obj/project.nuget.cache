@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "cwLJWauWB3GO7/yBsC42jJJzrjAM6eOhfBOcN/LbxG7n8AcZYDE4dtYrudym2hR0sp5Y2cWXgfkTxoPQCHzeaQ==",
+  "success": true,
+  "projectFilePath": "H:\\cursus_informatica\\openGL\\source\\SharpGL\\Core\\SharpGL.WinForms.Tests\\SharpGL.WinForms.Tests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wim\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\wim\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Users\\wim\\.nuget\\packages\\nunit.consolerunner\\3.11.1\\nunit.consolerunner.3.11.1.nupkg.sha512",
+    "C:\\Users\\wim\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512",
+    "C:\\Users\\wim\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512",
+    "C:\\Users\\wim\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
