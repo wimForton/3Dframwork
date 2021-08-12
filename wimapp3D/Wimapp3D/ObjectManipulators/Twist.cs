@@ -13,17 +13,18 @@ namespace GameEngine
 {
     class Twist : RenderableGeo, IRenderableGeo
     {
-        public double TwistAmount { get; set; } = 1;
-        TwistControlsGrid ProportiesGrid;
+        public double TwistAmount { get; set; } = 0.5;
+        TwistControlsGrid PropertyGrid;
         public Twist(IRenderableGeo inObject = null)
         {
 
 
             isRootGeoNode = false;
             Name = "Twist";
-            ProportiesGrid = new TwistControlsGrid(this);
+            PropertyGrid = new TwistControlsGrid(this);
             GuiNode = new NodeGuiElement(this);
             Wimapp3D.MainWindow.AppWindow.MainWindowCanvas.Children.Add(GuiNode);
+            PropertyGrid.SliderTwist.mySlider.ValueChanged += Sliders_ValueChanged;
 
             NeedsInputObject = true;
             NeedsUpdate = true;
@@ -42,25 +43,24 @@ namespace GameEngine
                 NeedsUpdate = false;
             }
         }
+
+        private void Sliders_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            TwistAmount = PropertyGrid.SliderTwist.mySlider.Value;
+            NeedsUpdate = true;
+        }
+
         public override void OpenProportiesWindow()
         {
-            if(Wimapp3D.MainWindow.AppWindow.ProportieWindowStack.Children.IndexOf(ProportiesGrid) < 0)
+            if(Wimapp3D.MainWindow.AppWindow.ProportieWindowStack.Children.IndexOf(PropertyGrid) < 0)
             {
-                Wimapp3D.MainWindow.AppWindow.ProportieWindowStack.Children.Add(ProportiesGrid);
+                Wimapp3D.MainWindow.AppWindow.ProportieWindowStack.Children.Add(PropertyGrid);
             }
         }
-        public override void CheckProportiesWindow()
-        {
-            if (ProportiesGrid.NeedsUpdate)
-            {
-                TwistAmount = ProportiesGrid.sliderTwist.Value;
-                ProportiesGrid.NeedsUpdate = false;
-                NeedsUpdate = true;
-            }
-        }
+
         public override void Update()
         {
-            CheckProportiesWindow();
+            //CheckProportiesWindow();
             if (InputObject.OutputNeedsUpdate || NeedsUpdate)
             {
                 BuildObject();

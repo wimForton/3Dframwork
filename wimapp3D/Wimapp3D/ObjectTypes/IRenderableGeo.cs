@@ -17,6 +17,7 @@ namespace GameEngine
         public bool isRootGeoNode { get; set; }
         public List<IRenderableGeo> ChildGeoNodes { get; set; }
         public static IRenderableGeo ChildLookingForGeoParent { get; set; }
+        public List<IAnimationControl> AnimationControls { get; set; }
         public NodeGuiElement GuiNode { get; set; }
         public string Name { get; set; }
         public Vector Position { get; set; }

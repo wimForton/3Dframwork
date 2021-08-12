@@ -34,12 +34,14 @@ namespace GameEngine
             sliderTime.ValueChanged += new RoutedPropertyChangedEventHandler<double>(Sliders_ValueChanged);
             //Grid sliderTimeGrid = MySlider.CreateSliderGrid(sliderTime, "Time");
             Children.Add(sliderTime);
+
+            AnimationTime.Instance.Frame = 0;
         }
 
         private void Sliders_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             //Wimapp3D.MainWindow.AppWindow.TimeText.Text = "FrameNr: " + Convert.ToString(sliderTime.Value);
-            AnimationTime.Instance.Time = Math.Round(sliderTime.Value) / 25;
+            AnimationTime.Instance.Frame = (int)sliderTime.Value;
         }
     }
 }

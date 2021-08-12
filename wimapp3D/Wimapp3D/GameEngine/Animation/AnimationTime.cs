@@ -8,25 +8,7 @@ using System.Windows;
 
 namespace GameEngine
 {
-    //class AnimationTime
-    //{
-    //    public EventHandler TimeChanged;
-    //    public static double Time { get; set; } = 0;
-    //    public static double FramesPerSecond { get; set; } = 25;
 
-    //    //public double Time
-    //    //{
-    //    //    get
-    //    //    {
-    //    //        return time;
-    //    //    }
-    //    //    set
-    //    //    {
-    //    //        time = value;
-    //    //        //this.TimeChanged(this, EventArgs.Empty);
-    //    //    }
-    //    //}
-    //}
     public sealed class AnimationTime : INotifyPropertyChanged
     {
         private static readonly AnimationTime instance = new AnimationTime();
@@ -41,16 +23,16 @@ namespace GameEngine
         }
 
         // notifying property
-        private double time;
-        public double Time
+        private int frame;
+        public int Frame
         {
-            get { return this.time; }
+            get { return this.frame; }
 
             set
             {
-                if (value != this.time)
+                if (value != this.frame)
                 {
-                    this.time = value;
+                    this.frame = value;
                     NotifyPropertyChanged("MyProp");
                 }
             }

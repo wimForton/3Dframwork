@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameEngine
 {
-    class KeyFrame
+    public class KeyFrame
     {
         public double Value { get; set; }
         public KeyFrame(double inValue)

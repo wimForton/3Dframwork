@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,17 +9,16 @@ using System.Windows.Media;
 
 namespace GameEngine
 {
-    class TwistControlsGrid : Grid
+    class PropertyControllerGrid : Grid
     {
-        public string TextboxName { get; set; } = "undefined";
+        public string GridName { get; set; } = "undefined";
         public bool NeedsUpdate { get; set; } = false;
 
-        public KeyFrameSlider SliderTwist;
-        Twist MyInputObject;
-        public TwistControlsGrid(Twist inObject)
+        MultiPrimitive MyInputObject;
+        public StackPanel ControlsStackPanel;
+        public PropertyControllerGrid(string inName)
         {
-            SliderTwist = new KeyFrameSlider("Twist", inObject.TwistAmount, 0, 10, 0.5);
-            MyInputObject = inObject;
+            GridName = inName;
             RowDefinitions.Add(new RowDefinition() { Height = new GridLength(38) });
             RowDefinitions.Add(new RowDefinition());
             Margin = new Thickness(5, 5, 5, 5);
@@ -29,7 +27,7 @@ namespace GameEngine
             Border border = new Border();
             border.BorderThickness = new Thickness(1, 1, 1, 1);
             border.BorderBrush = Brushes.Black;
-            border.CornerRadius = new CornerRadius(3, 3, 3, 3);
+            //border.CornerRadius = new CornerRadius(15, 15, 15, 15);
             SetColumn(border, 0);
             SetRow(border, 0);
             SetColumnSpan(border, 3);
@@ -38,7 +36,7 @@ namespace GameEngine
 
             TextBlock myName = new TextBlock();
             myName.Margin = new Thickness(5, 5, 5, 5);
-            myName.Text = inObject.Name;
+            myName.Text = GridName;
             myName.FontSize = 20;
             myName.Foreground = new SolidColorBrush(Color.FromRgb((byte)255, (byte)255, (byte)255));
             myName.HorizontalAlignment = HorizontalAlignment.Left;
@@ -52,15 +50,12 @@ namespace GameEngine
             Button_Close.Click += Button_Close_Click;
             Children.Add(Button_Close);
 
-            StackPanel ControlsStackPanel = new StackPanel();
-
+            ControlsStackPanel = new StackPanel();
+            //Grid.SetColumn(ControlsStackPanel, 0);
             Grid.SetRow(ControlsStackPanel, 1);
-
-            ControlsStackPanel.Children.Add(SliderTwist.AnimCtrlGrid);
 
             Children.Add(ControlsStackPanel);
         }
-
         private void Button_Close_Click(object sender, RoutedEventArgs e)
         {
             int index = Wimapp3D.MainWindow.AppWindow.ProportieWindowStack.Children.IndexOf(this);
@@ -69,6 +64,5 @@ namespace GameEngine
                 Wimapp3D.MainWindow.AppWindow.ProportieWindowStack.Children.RemoveAt(index);
             }
         }
-
     }
 }

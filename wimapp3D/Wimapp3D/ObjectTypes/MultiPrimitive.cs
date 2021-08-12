@@ -13,18 +13,27 @@ namespace GameEngine
 {
     class MultiPrimitive : RenderableGeo, IRenderableGeo
     {
-        public double Rows { get; set; } = 3;
-        public double Columns { get; set; } = 100;
-        public double Pi { get; set; } = 3.14159265358979323846;
-        public double WrapStart { get; set; } = 0;
-        public double WrapEnd { get; set; } = 1.0;
-        public double RowWrapStart { get; set; } = 0.0;
-        public double RowWrapEnd { get; set; } = 0.5;
-        public double Middle { get; set; } = 0.0;
-        public double Roll { get; set; } = 0.0;
-        public double SphereRadius { get; set; } = 1;
+        private double Rows { get; set; } = 3;
+        private double Columns { get; set; } = 100;
+        private double Pi { get; set; } = 3.14159265358979323846;
+        private double WrapStart { get; set; } = 0;
+        private double WrapEnd { get; set; } = 1.0;
+        private double RowWrapStart { get; set; } = 0.0;
+        private double RowWrapEnd { get; set; } = 0.5;
+        private double Middle { get; set; } = 0.0;
+        private double Roll { get; set; } = 0.0;
+        private double SphereRadius { get; set; } = 1;
 
-        MultiPrimitiveControlGrid ProportiesGrid;
+        PropertyControllerGrid PropertyGrid;
+        private IAnimationControl SliderRows;
+        private IAnimationControl SliderColumns;
+        private IAnimationControl SliderWrapStart;
+        private IAnimationControl SliderWrapEnd;
+        private IAnimationControl SliderRowWrapStart;
+        private IAnimationControl SliderRowWrapEnd;
+        private IAnimationControl SliderMiddle;
+        private IAnimationControl SliderRoll;
+        private IAnimationControl SliderRadius;
 
         public MultiPrimitive(int inRows, int inCols, string inName)
         {
@@ -32,37 +41,64 @@ namespace GameEngine
             Name = inName;
             Rows = inRows;
             Columns = inCols;
-            ProportiesGrid = new MultiPrimitiveControlGrid(this);
+            //AnimationControls.Add()
+            PropertyGrid = new PropertyControllerGrid(Name);
+            SliderRows = new KeyFrameSlider("Rows", Rows, 2, 100, 1);
+            SliderColumns = new KeyFrameSlider("Cols", Columns, 2, 100, 1);
+            SliderWrapStart = new KeyFrameSlider("Ystart", WrapStart, 0, 1, 0.01);
+            SliderWrapEnd = new KeyFrameSlider("Yend", WrapEnd, 0, 1, 0.01);
+            SliderRowWrapStart = new KeyFrameSlider("Xstart", RowWrapStart, 0, 1, 0.01);
+            SliderRowWrapEnd = new KeyFrameSlider("Xend", RowWrapEnd, 0, 1, 0.01);
+            SliderMiddle = new KeyFrameSlider("MiddHole", Middle, 0, 5, 0.01);
+            SliderRoll = new KeyFrameSlider("Roll", Roll, -3, 3, 0.01);
+            SliderRadius = new KeyFrameSlider("Radius", SphereRadius, 0, 3, 0.01);
+            PropertyGrid.ControlsStackPanel.Children.Add(SliderRows.AnimCtrlGrid);
+            PropertyGrid.ControlsStackPanel.Children.Add(SliderColumns.AnimCtrlGrid);
+            PropertyGrid.ControlsStackPanel.Children.Add(SliderWrapStart.AnimCtrlGrid);
+            PropertyGrid.ControlsStackPanel.Children.Add(SliderWrapEnd.AnimCtrlGrid);
+            PropertyGrid.ControlsStackPanel.Children.Add(SliderRowWrapStart.AnimCtrlGrid);
+            PropertyGrid.ControlsStackPanel.Children.Add(SliderRowWrapEnd.AnimCtrlGrid);
+            PropertyGrid.ControlsStackPanel.Children.Add(SliderMiddle.AnimCtrlGrid);
+            PropertyGrid.ControlsStackPanel.Children.Add(SliderRoll.AnimCtrlGrid);
+            PropertyGrid.ControlsStackPanel.Children.Add(SliderRadius.AnimCtrlGrid);
+            SliderRows.mySlider.ValueChanged += Sliders_ValueChanged;
+            SliderColumns.mySlider.ValueChanged += Sliders_ValueChanged;
+            SliderWrapStart.mySlider.ValueChanged += Sliders_ValueChanged;
+            SliderWrapEnd.mySlider.ValueChanged += Sliders_ValueChanged;
+            SliderRowWrapStart.mySlider.ValueChanged += Sliders_ValueChanged;
+            SliderRowWrapEnd.mySlider.ValueChanged += Sliders_ValueChanged;
+            SliderMiddle.mySlider.ValueChanged += Sliders_ValueChanged;
+            SliderRoll.mySlider.ValueChanged += Sliders_ValueChanged;
+            SliderRadius.mySlider.ValueChanged += Sliders_ValueChanged;
             GuiNode = new NodeGuiElement(this);
             Wimapp3D.MainWindow.AppWindow.MainWindowCanvas.Children.Add(GuiNode);
         }
+
+        private void Sliders_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            Rows = (int)SliderRows.mySlider.Value;
+            Columns = (int)SliderColumns.mySlider.Value;
+            WrapStart = SliderWrapStart.mySlider.Value;
+            WrapEnd = SliderWrapEnd.mySlider.Value;
+            RowWrapStart = SliderRowWrapStart.mySlider.Value;
+            RowWrapEnd = SliderRowWrapEnd.mySlider.Value;
+            Middle = SliderMiddle.mySlider.Value;
+            Roll = SliderRoll.mySlider.Value;
+            SphereRadius = SliderRadius.mySlider.Value;
+            NeedsUpdate = true;
+        }
+
         public override void OpenProportiesWindow()
         {
-            if (Wimapp3D.MainWindow.AppWindow.ProportieWindowStack.Children.IndexOf(ProportiesGrid) < 0)
+            if (Wimapp3D.MainWindow.AppWindow.ProportieWindowStack.Children.IndexOf(PropertyGrid) < 0)
             {
-                Wimapp3D.MainWindow.AppWindow.ProportieWindowStack.Children.Add(ProportiesGrid);
+                Wimapp3D.MainWindow.AppWindow.ProportieWindowStack.Children.Add(PropertyGrid);
             }
         }
-        public override void CheckProportiesWindow()
-        {
-            if (ProportiesGrid.NeedsUpdate)
-            {
-                Rows = ProportiesGrid.sliderRows.Value;
-                Columns = ProportiesGrid.sliderColumns.Value;
-                WrapStart = ProportiesGrid.sliderWrapStart.Value;
-                WrapEnd = ProportiesGrid.sliderWrapEnd.Value;
-                RowWrapStart = ProportiesGrid.sliderRowWrapStart.Value;
-                RowWrapEnd = ProportiesGrid.sliderRowWrapEnd.Value;
-                Middle = ProportiesGrid.sliderMiddle.Value;
-                Roll = ProportiesGrid.sliderRoll.Value;
-                SphereRadius = ProportiesGrid.sliderRadius.Value;
-                ProportiesGrid.NeedsUpdate = false;
-                NeedsUpdate = true;
-            }
-        }
+
         public override void Update()
         {
-            CheckProportiesWindow();
+            //CheckProportiesWindow();
             if (NeedsUpdate)
             {
                 BuildObject();

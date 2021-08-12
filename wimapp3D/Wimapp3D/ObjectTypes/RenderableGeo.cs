@@ -17,6 +17,7 @@ namespace GameEngine
         public bool isRootGeoNode { get; set; } = false;
         public List<IRenderableGeo> ChildGeoNodes { get; set; } = new List<IRenderableGeo>();
         public static IRenderableGeo ChildLookingForGeoParent { get; set; }
+        public List<IAnimationControl> AnimationControls { get; set; }
         public NodeGuiElement GuiNode { get; set; }
         public string Name { get; set; } = "Unnamed";
         public Vector Position { get; set; } = new Vector(0, 0, 0);
@@ -48,19 +49,22 @@ namespace GameEngine
         public void MakeVaoList()
         {
             myVaoList.Clear();
-            foreach (var poly in Polygons)//We use only triangles in our engine 
+            if (Polygons.Count > 0)
             {
-                VertexToVao(0, poly);
-                VertexToVao(1, poly);
-                VertexToVao(2, poly);
-                if (poly.Vertices.Count == 4)//create 2 triangles per quad in the right order (or 1triangle per triangle)
+                foreach (var poly in Polygons)//We use only triangles in our engine 
                 {
-                    VertexToVao(2, poly);
-                    VertexToVao(3, poly);
                     VertexToVao(0, poly);
+                    VertexToVao(1, poly);
+                    VertexToVao(2, poly);
+                    if (poly.Vertices.Count == 4)//create 2 triangles per quad in the right order (or 1triangle per triangle)
+                    {
+                        VertexToVao(2, poly);
+                        VertexToVao(3, poly);
+                        VertexToVao(0, poly);
+                    }
                 }
+                MakeVaoArray();
             }
-            MakeVaoArray();
         }
         public virtual void MakeVaoArray()
         {
