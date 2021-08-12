@@ -12,6 +12,5 @@ namespace GameEngine
         public AnimatableParameter MyAnimatableParameter { get; set; }
         public Grid AnimCtrlGrid { get; set; }
         public MySlider mySlider { get; set; }
-
     }
 }

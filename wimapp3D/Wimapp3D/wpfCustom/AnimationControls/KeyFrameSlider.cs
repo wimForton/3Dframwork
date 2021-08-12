@@ -88,17 +88,10 @@ namespace GameEngine
             sliderValue = mySlider.Value;
         }
 
-        public double Value
-        {
-            get
-            {
-                return MyAnimatableParameter.GetValueAtFrame(AnimationTime.Instance.Frame);
-            }
-            set
-            {
-                //MyAnimatableParameter.SetKeyAtTime(value, AnimationTime.Instance.Time);
-            }
-        }
+        //public override double Value()
+        //{
+        //        return MyAnimatableParameter.GetValueAtFrame(AnimationTime.Instance.Frame);
+        //}
         private void SetKeyFrame(object sender, RoutedEventArgs e)
         {
             //MessageBox.Show(Convert.ToString(sliderValue));
