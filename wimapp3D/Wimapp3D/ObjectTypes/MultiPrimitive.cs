@@ -15,7 +15,6 @@ namespace GameEngine
     {
         private double Rows { get; set; } = 3;
         private double Columns { get; set; } = 100;
-        private double Pi { get; set; } = 3.14159265358979323846;
         private double WrapStart { get; set; } = 0;
         private double WrapEnd { get; set; } = 1.0;
         private double RowWrapStart { get; set; } = 0.0;
@@ -104,8 +103,8 @@ namespace GameEngine
                     Vector pos = new Vector(0.0, 0.0, 0.0);
                     Vector norm = new Vector(0.0, 0.0, 0.0);
                     //cylinder
-                    double wrapPos = MyMath.Fit(col / Columns, 0, 1, WrapStart, WrapEnd) * 2 * Pi;
-                    double sphereWrapPos = MyMath.Fit(row / Rows, 0, 1, RowWrapStart, RowWrapEnd) * 2 * Pi;
+                    double wrapPos = MyMath.Fit(col / Columns, 0, 1, WrapStart, WrapEnd) * 2 * Math.PI;
+                    double sphereWrapPos = MyMath.Fit(row / Rows, 0, 1, RowWrapStart, RowWrapEnd) * 2 * Math.PI;
                     pos.X = Math.Sin(wrapPos);//Math.Sin
                     pos.Z = Math.Cos(wrapPos);
 

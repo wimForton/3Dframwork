@@ -38,14 +38,7 @@ namespace GameEngine
         public virtual void UpdateVAO() { }
         public virtual void OpenProportiesWindow() { }
         public virtual void CheckProportiesWindow() { }
-        //public List<IRenderableGeo> getConnectionsStart()
-        //{
-        //    return ConnectionsStart;
-        //}
-        //public List<IRenderableGeo> getConnectionsEnd()
-        //{
-        //    return ConnectionsEnd;
-        //}
+
         public void MakeVaoList()
         {
             myVaoList.Clear();
