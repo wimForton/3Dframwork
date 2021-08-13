@@ -19,7 +19,7 @@ namespace GameEngine
         Twist MyInputObject;
         public TwistControlsGrid(Twist inObject)
         {
-            SliderTwist = new KeyFrameSlider("Twist", inObject.TwistAmount, 0, 10, 0.5);
+            SliderTwist = new KeyFrameSlider(0, "Twist", inObject.TwistAmount, 0, 10, 0.5);
             MyInputObject = inObject;
             RowDefinitions.Add(new RowDefinition() { Height = new GridLength(38) });
             RowDefinitions.Add(new RowDefinition());

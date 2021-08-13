@@ -24,6 +24,16 @@ namespace GameEngine
         private double Roll { get; set; } = 0.0;
         private double SphereRadius { get; set; } = 1;
 
+        private AnimatableParameter ApRows { get; set; }//////////////////////////////////////hier "AnimatableParameter IPV double"
+        private AnimatableParameter ApColumns { get; set; }
+        private AnimatableParameter ApWrapStart { get; set; }
+        private AnimatableParameter ApWrapEnd { get; set; }
+        private AnimatableParameter ApRowWrapStart { get; set; }
+        private AnimatableParameter ApRowWrapEnd { get; set; }
+        private AnimatableParameter ApMiddle { get; set; }
+        private AnimatableParameter ApRoll { get; set; }
+        private AnimatableParameter ApSphereRadius { get; set; }
+
         PropertyControllerGrid PropertyGrid;
 
 
@@ -41,33 +51,66 @@ namespace GameEngine
             Button SaveButton = MyButton.CreateButton("Save Json file");
             SaveButton.Click += SaveButton_Click;
             PropertyGrid.ControlsStackPanel.Children.Add(SaveButton);
+            Button KeyAll = MyButton.CreateButton("Key All");
+            KeyAll.Click += KeyAll_Click;
+            PropertyGrid.ControlsStackPanel.Children.Add(KeyAll);
+            if (AnimatableParameters == null)
+            {
+                AnimatableParameters = new List<AnimatableParameter>()
+                {
+                    new AnimatableParameter(3),
+                    new AnimatableParameter(10),
+                    new AnimatableParameter(0),
+                    new AnimatableParameter(1),
+                    new AnimatableParameter(0),
+                    new AnimatableParameter(0.5),
+                    new AnimatableParameter(0),
+                    new AnimatableParameter(0),
+                    new AnimatableParameter(1),
+                };
+            }
             if(AnimationControls == null)
             {
                 AnimationControls = new List<IAnimationControl>
                 {
-                    new KeyFrameSlider("Rows", Rows, 2, 100, 1),
-                    new KeyFrameSlider("Cols", Columns, 2, 100, 1),
-                    new KeyFrameSlider("Ystart", WrapStart, 0, 1, 0.01),
-                    new KeyFrameSlider("Yend", WrapEnd, 0, 1, 0.01),
-                    new KeyFrameSlider("Xstart", RowWrapStart, 0, 1, 0.01),
-                    new KeyFrameSlider("Xend", RowWrapEnd, 0, 1, 0.01),
-                    new KeyFrameSlider("MiddHole", Middle, 0, 5, 0.01),
-                    new KeyFrameSlider("Roll", Roll, -3, 3, 0.01),
-                    new KeyFrameSlider("Radius", SphereRadius, 0, 3, 0.01)
+                    new KeyFrameSlider(0, "Rows", Rows, 2, 100, 1),
+                    new KeyFrameSlider(1, "Cols", Columns, 2, 100, 1),
+                    new KeyFrameSlider(2, "Ystart", WrapStart, 0, 1, 0.01),
+                    new KeyFrameSlider(3, "Yend", WrapEnd, 0, 1, 0.01),
+                    new KeyFrameSlider(4, "Xstart", RowWrapStart, 0, 1, 0.01),
+                    new KeyFrameSlider(5, "Xend", RowWrapEnd, 0, 1, 0.01),
+                    new KeyFrameSlider(6, "MiddHole", Middle, 0, 5, 0.01),
+                    new KeyFrameSlider(7, "Roll", Roll, -6, 6, 0.01),
+                    new KeyFrameSlider(8, "Radius", SphereRadius, 0, 3, 0.01)
                 };
                 for (int i = 0; i < AnimationControls.Count; i++)
                 {
                     PropertyGrid.ControlsStackPanel.Children.Add(AnimationControls[i].AnimCtrlGrid);
                     AnimationControls[i].mySlider.ValueChanged += Sliders_ValueChanged;
+                    AnimationControls[i].SetKeyButton.Click += SetKeyButton_Click;
                 }
             }
-
+            AnimationTime.Instance.PropertyChanged += Instance_PropertyChanged;
             if (GuiNode == null)
             {
                 GuiNode = new NodeGuiElement(this);
                 Wimapp3D.MainWindow.AppWindow.MainWindowCanvas.Children.Add(GuiNode);
             }
 
+        }
+
+        private void KeyAll_Click(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < AnimatableParameters.Count; i++)
+            {
+                AnimatableParameters[i].SetKeyAtFrame(AnimationControls[i].mySlider.Value, AnimationTime.Instance.Frame);
+            }
+        }
+
+        private void SetKeyButton_Click(object sender, RoutedEventArgs e)
+        {
+            int myValue = (int)((Button)sender).Tag;
+            AnimatableParameters[myValue].SetKeyAtFrame(AnimationControls[myValue].mySlider.Value, AnimationTime.Instance.Frame);
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -77,6 +120,7 @@ namespace GameEngine
 
         private void Sliders_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
+
             Rows = (int)AnimationControls[0].mySlider.Value;
             Columns = (int)AnimationControls[1].mySlider.Value;
             WrapStart = AnimationControls[2].mySlider.Value;
@@ -88,6 +132,15 @@ namespace GameEngine
             SphereRadius = AnimationControls[8].mySlider.Value;
 
             NeedsUpdate = true;
+        }
+
+        private void Instance_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            for (int i = 0; i < AnimationControls.Count; i++)
+            {
+                AnimationControls[i].mySlider.Value = AnimatableParameters[i].GetValueAtFrame(AnimationTime.Instance.Frame);
+            }
+
         }
 
         public override void OpenProportiesWindow()
@@ -115,6 +168,9 @@ namespace GameEngine
             UVs.Clear();
             Normals.Clear();
             Polygons.Clear();
+            //Rows = AnimatableParameters[0].GetValueAtFrame(AnimationTime.Instance.Frame);
+            if (Rows < 2) Rows = 2;
+            if (Columns < 2) Columns = 2;
 
             for (int row = 0; row <= Rows; row++)
             {

@@ -13,6 +13,11 @@ namespace GameEngine
         //public static List<IRenderableGeo> ConnectionsEnd { get; set; }
         //public List<IRenderableGeo> getConnectionsStart();
         //public List<IRenderableGeo> getConnectionsEnd();
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public Vector Position { get; set; }
+        public Vector Rotation { get; set; }
+        public Vector Scale { get; set; }
         public IRenderableGeo InputObject { get; set; }
         public bool isRootGeoNode { get; set; }
         public List<IRenderableGeo> ChildGeoNodes { get; set; }
@@ -22,11 +27,6 @@ namespace GameEngine
         public List<IAnimationControl> AnimationControls { get; set; }
         public NodeGuiElement GuiNode { get; set; }
         public static int HighestId { get; set; }
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public Vector Position { get; set; }
-        public Vector Rotation { get; set; }
-        public Vector Scale { get; set; }
         public List<Polygon> Polygons { get; set; }
         public List<Vector> Points { get; set; }
         public List<Vector> UVs { get; set; }

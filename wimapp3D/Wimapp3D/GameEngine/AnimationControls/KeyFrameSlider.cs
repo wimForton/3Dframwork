@@ -17,10 +17,9 @@ namespace GameEngine
 
         private double sliderValue;
 
-        public KeyFrameSlider(string name, double inValue, double inMinimum, double inMaximum, double inTickFrequency)
+        public KeyFrameSlider(int Id, string name, double inValue, double inMinimum, double inMaximum, double inTickFrequency)
         {
             AnimCtrlGrid = new Grid();
-            MyAnimatableParameter = new AnimatableParameter();
             AnimCtrlGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(70) });
             AnimCtrlGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(60) });
             AnimCtrlGrid.ColumnDefinitions.Add(new ColumnDefinition());
@@ -45,8 +44,6 @@ namespace GameEngine
             myName.FontSize = 16;
             myName.Foreground = new SolidColorBrush(Color.FromRgb((byte)255, (byte)255, (byte)255));
 
-            AnimationTime.Instance.PropertyChanged += Instance_PropertyChanged;
-
             TextBox text = new TextBox();
             Grid.SetColumn(text, 1);
             Grid.SetRow(text, 0);
@@ -56,7 +53,6 @@ namespace GameEngine
             mySlider = new MySlider(inValue, inMinimum, inMaximum, inTickFrequency);
             mySlider.ValueChanged += MySlider_ValueChanged;
             sliderValue = inValue;
-            MyAnimatableParameter.SetKeyAtFrame(inValue, 0);
             Grid.SetColumn(mySlider, 2);
             mySlider.Name = "name";
             mySlider.Margin = new Thickness(2, 5, 2, 5);
@@ -70,32 +66,17 @@ namespace GameEngine
             AnimCtrlGrid.Children.Add(text);
             AnimCtrlGrid.Children.Add(mySlider);
 
-            Button SetKeyButton = MyButton.CreateButton("Key");
+            SetKeyButton = MyButton.CreateButton("Key");
+            SetKeyButton.Tag = Id;
             SetKeyButton.Width = 25;
             SetKeyButton.Margin = new Thickness(2, 5, 2, 5);
-            SetKeyButton.Click += SetKeyFrame;
             Grid.SetColumn(SetKeyButton, 3);
             AnimCtrlGrid.Children.Add(SetKeyButton);
-        }
-
-        private void Instance_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
-            mySlider.Value = MyAnimatableParameter.GetValueAtFrame(AnimationTime.Instance.Frame);
         }
 
         private void MySlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             sliderValue = mySlider.Value;
-        }
-
-        //public override double Value()
-        //{
-        //        return MyAnimatableParameter.GetValueAtFrame(AnimationTime.Instance.Frame);
-        //}
-        private void SetKeyFrame(object sender, RoutedEventArgs e)
-        {
-            //MessageBox.Show(Convert.ToString(sliderValue));
-            MyAnimatableParameter.SetKeyAtFrame(sliderValue, AnimationTime.Instance.Frame);
         }
     }
 }
