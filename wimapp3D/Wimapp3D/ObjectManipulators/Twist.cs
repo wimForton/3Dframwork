@@ -17,7 +17,8 @@ namespace GameEngine
         TwistControlsGrid PropertyGrid;
         public Twist(IRenderableGeo inObject = null)
         {
-
+            IRenderableGeo.HighestId++;
+            Id = IRenderableGeo.HighestId;
 
             isRootGeoNode = false;
             Name = "Twist";

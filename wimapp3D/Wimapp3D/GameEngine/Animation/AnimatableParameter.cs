@@ -4,20 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Newtonsoft.Json;
 
 namespace GameEngine
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public class AnimatableParameter
     {
+        [JsonProperty]
         public SortedDictionary<int, KeyFrame> KeyFrames { get; set; } = new SortedDictionary<int, KeyFrame>();
         public List<int> indexList;
         private double ValueNotkeyed { get; set; } = 0;
         public AnimatableParameter()
         {
-            KeyFrames = new SortedDictionary<int, KeyFrame>();
-            KeyFrames.Add(0,new KeyFrame(0));
-            indexList = new List<int>();
-
+            if(KeyFrames == null)
+            {
+                KeyFrames = new SortedDictionary<int, KeyFrame>();
+                KeyFrames.Add(0, new KeyFrame(0));
+            }
+            if(indexList == null)
+            {
+                indexList = new List<int>();
+            }
         }
         public double GetValueAtFrame(int inFrame)
         {

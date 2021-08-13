@@ -16,9 +16,13 @@ namespace GameEngine
         public IRenderableGeo InputObject { get; set; }
         public bool isRootGeoNode { get; set; }
         public List<IRenderableGeo> ChildGeoNodes { get; set; }
+        public List<int> ChildGeoNodeIds { get; set; }
         public static IRenderableGeo ChildLookingForGeoParent { get; set; }
+        public List<AnimatableParameter> AnimatableParameters { get; set;}
         public List<IAnimationControl> AnimationControls { get; set; }
         public NodeGuiElement GuiNode { get; set; }
+        public static int HighestId { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public Vector Position { get; set; }
         public Vector Rotation { get; set; }
@@ -40,6 +44,8 @@ namespace GameEngine
         public abstract void OpenProportiesWindow();
         public abstract void CheckProportiesWindow();
         public abstract string ToString();
-        
+        public virtual void WriteJson() { }
+
+
     }
 }

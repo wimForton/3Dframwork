@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
+using System.Text.Json.Serialization;
 
 namespace GameEngine
 {
@@ -11,13 +12,19 @@ namespace GameEngine
     {
         public void draw(string c, ConsoleColor colr);
     }*/
-    class Vector
+
+    public class Vector
     {
         public double X { get; set; }
         public double Y { get; set; }
         public double Z { get; set; }
         public int Dimensions { get; set; }
-        public Vector(double inX, double inY, double inZ)
+        public Vector()
+        {
+            X = 0; Y = 0; Z = 0;
+            Dimensions = 3;
+        }
+        public Vector(double inX = 0, double inY = 0, double inZ = 0)
         {
             X = inX; Y = inY; Z = inZ;
             Dimensions = 3;

@@ -13,7 +13,8 @@ namespace GameEngine
 {
     class MultiPrimitive : RenderableGeo, IRenderableGeo
     {
-        private double Rows { get; set; } = 3;
+
+        private double Rows { get; set; } = 3;//////////////////////////////////////hier "AnimatableParameter IPV double"
         private double Columns { get; set; } = 100;
         private double WrapStart { get; set; } = 0;
         private double WrapEnd { get; set; } = 1.0;
@@ -26,33 +27,52 @@ namespace GameEngine
         PropertyControllerGrid PropertyGrid;
 
 
-        public MultiPrimitive(int inRows, int inCols, string inName)
+        public MultiPrimitive()
         {
+            IRenderableGeo.HighestId++;
+            Id = IRenderableGeo.HighestId;
+
             isRootGeoNode = true;
-            Name = inName;
-            Rows = inRows;
-            Columns = inCols;
+            Name = "unnamed";
+            Rows = 10;
+            Columns = 10;
             
             PropertyGrid = new PropertyControllerGrid(Name);
-            AnimationControls = new List<IAnimationControl>
+            Button SaveButton = MyButton.CreateButton("Save Json file");
+            SaveButton.Click += SaveButton_Click;
+            PropertyGrid.ControlsStackPanel.Children.Add(SaveButton);
+            if(AnimationControls == null)
             {
-                new KeyFrameSlider("Rows", Rows, 2, 100, 1),
-                new KeyFrameSlider("Cols", Columns, 2, 100, 1),
-                new KeyFrameSlider("Ystart", WrapStart, 0, 1, 0.01),
-                new KeyFrameSlider("Yend", WrapEnd, 0, 1, 0.01),
-                new KeyFrameSlider("Xstart", RowWrapStart, 0, 1, 0.01),
-                new KeyFrameSlider("Xend", RowWrapEnd, 0, 1, 0.01),
-                new KeyFrameSlider("MiddHole", Middle, 0, 5, 0.01),
-                new KeyFrameSlider("Roll", Roll, -3, 3, 0.01),
-                new KeyFrameSlider("Radius", SphereRadius, 0, 3, 0.01)
-            };
-            for (int i = 0; i < AnimationControls.Count; i++)
-            {
-                PropertyGrid.ControlsStackPanel.Children.Add(AnimationControls[i].AnimCtrlGrid);
-                AnimationControls[i].mySlider.ValueChanged += Sliders_ValueChanged;
+                AnimationControls = new List<IAnimationControl>
+                {
+                    new KeyFrameSlider("Rows", Rows, 2, 100, 1),
+                    new KeyFrameSlider("Cols", Columns, 2, 100, 1),
+                    new KeyFrameSlider("Ystart", WrapStart, 0, 1, 0.01),
+                    new KeyFrameSlider("Yend", WrapEnd, 0, 1, 0.01),
+                    new KeyFrameSlider("Xstart", RowWrapStart, 0, 1, 0.01),
+                    new KeyFrameSlider("Xend", RowWrapEnd, 0, 1, 0.01),
+                    new KeyFrameSlider("MiddHole", Middle, 0, 5, 0.01),
+                    new KeyFrameSlider("Roll", Roll, -3, 3, 0.01),
+                    new KeyFrameSlider("Radius", SphereRadius, 0, 3, 0.01)
+                };
+                for (int i = 0; i < AnimationControls.Count; i++)
+                {
+                    PropertyGrid.ControlsStackPanel.Children.Add(AnimationControls[i].AnimCtrlGrid);
+                    AnimationControls[i].mySlider.ValueChanged += Sliders_ValueChanged;
+                }
             }
-            GuiNode = new NodeGuiElement(this);
-            Wimapp3D.MainWindow.AppWindow.MainWindowCanvas.Children.Add(GuiNode);
+
+            if (GuiNode == null)
+            {
+                GuiNode = new NodeGuiElement(this);
+                Wimapp3D.MainWindow.AppWindow.MainWindowCanvas.Children.Add(GuiNode);
+            }
+
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            WriteJson();
         }
 
         private void Sliders_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)

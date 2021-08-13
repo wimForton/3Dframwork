@@ -48,3 +48,4 @@ H:\cursus_informatica\3Dapplication\wimapp3D\Wimapp3D\obj\Debug\net5.0-windows\W
 H:\cursus_informatica\3Dapplication\wimapp3D\Wimapp3D\obj\Debug\net5.0-windows\ref\Wimapp3D.dll
 H:\cursus_informatica\3Dapplication\wimapp3D\Wimapp3D\obj\Debug\net5.0-windows\Wimapp3D.pdb
 H:\cursus_informatica\3Dapplication\wimapp3D\Wimapp3D\obj\Debug\net5.0-windows\Wimapp3D.genruntimeconfig.cache
+H:\cursus_informatica\3Dapplication\wimapp3D\Wimapp3D\bin\Debug\net5.0-windows\Newtonsoft.Json.dll

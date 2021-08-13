@@ -37,6 +37,12 @@
             <Button Content=" Close proporties " PreviewMouseLeftButtonDown="ClearProportieStack"
                     Margin="5,5,5,0" VerticalAlignment="Top" Height="20"
                     Background="#FF303030" Foreground="White" Grid.Column="1"/>
+            <Button Content=" Save " PreviewMouseLeftButtonDown="SaveScene"
+                    Margin="5,5,5,0" VerticalAlignment="Top" Height="20"
+                    Background="#FF303030" Foreground="White" Grid.Column="1"/>
+            <Button Content=" Load " PreviewMouseLeftButtonDown="LoadScene"
+                    Margin="5,5,5,0" VerticalAlignment="Top" Height="20"
+                    Background="#FF303030" Foreground="White" Grid.Column="1"/>
         </StackPanel>
         <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1" Grid.Column="1">
             <StackPanel x:Name="ProportieWindowStack" Background="#FF616060" CanVerticallyScroll="True">

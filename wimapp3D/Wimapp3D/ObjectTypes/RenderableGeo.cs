@@ -5,23 +5,37 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.IO;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace GameEngine
 {
+    [JsonObject(MemberSerialization.OptIn)]
     abstract class RenderableGeo : IRenderableGeo
     {
-        //public static List<IRenderableGeo> ConnectionsStart { get; set; } = new List<IRenderableGeo>();
-        //public static List<IRenderableGeo> ConnectionsEnd { get; set; } = new List<IRenderableGeo>();
+        public static int HighestId { get; set; }
+        [JsonProperty]
+        public int Id { get; set; } = -1;
+        [JsonProperty]
         public Vector GuiNodePosition { get; set; } = new Vector(10, 10, 10);
         public IRenderableGeo InputObject { get; set; }
+        [JsonProperty]
         public bool isRootGeoNode { get; set; } = false;
         public List<IRenderableGeo> ChildGeoNodes { get; set; } = new List<IRenderableGeo>();
+        [JsonProperty]
+        public List<int> ChildGeoNodeIds { get; set; } = new List<int>();
         public static IRenderableGeo ChildLookingForGeoParent { get; set; }
+        [JsonProperty]
         public List<IAnimationControl> AnimationControls { get; set; }
         public NodeGuiElement GuiNode { get; set; }
+        [JsonProperty]
         public string Name { get; set; } = "Unnamed";
+        [JsonProperty]
         public Vector Position { get; set; } = new Vector(0, 0, 0);
+        [JsonProperty]
         public Vector Rotation { get; set; } = new Vector(0, 0, 0);
+        [JsonProperty]
         public Vector Scale { get; set; } = new Vector(1, 1, 1);
         public List<Polygon> Polygons { get; set; } = new List<Polygon>();
         public List<Vector> Points { get; set; } = new List<Vector>();
@@ -85,6 +99,22 @@ namespace GameEngine
         public float[] GetVaoArray()//We just return the list
         {
             return VaoArray;
+        }
+        public virtual void WriteJson()
+        {
+
+            //string json = JsonConvert.SerializeObject(this, Formatting.Indented);
+
+            JsonSerializer serializer = new JsonSerializer();
+            serializer.Converters.Add(new JavaScriptDateTimeConverter());
+            serializer.NullValueHandling = NullValueHandling.Ignore;
+            serializer.Formatting = Formatting.Indented;
+
+            using (StreamWriter sw = new StreamWriter(@"H:\cursus_informatica\3Dapplication\json.txt"))
+            using (JsonWriter writer = new JsonTextWriter(sw))
+            {
+                serializer.Serialize(writer, this);
+            }
         }
     }
 }

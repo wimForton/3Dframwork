@@ -87,7 +87,7 @@ namespace Wimapp3D
         }
         private void AddMultiPrim(object sender, MouseButtonEventArgs e)
         {
-            IRenderableGeo myMultiPrim = new MultiPrimitive(10, 10, "primitive" + Convert.ToString(GameEngine.myRendergeo.Count + 1));
+            IRenderableGeo myMultiPrim = new MultiPrimitive();//(10, 10, "primitive" + Convert.ToString(GameEngine.myRendergeo.Count + 1))
             myMultiPrim.GuiNode.myTranslate.X = 130;
             myMultiPrim.GuiNode.myTranslate.Y = 130;
             myMultiPrim.GuiNodePosition.X = 130;
@@ -111,6 +111,16 @@ namespace Wimapp3D
         private void ClearProportieStack(object sender, MouseButtonEventArgs e)
         {
             ProportieWindowStack.Children.Clear();
+        }
+        private void SaveScene(object sender, MouseButtonEventArgs e)
+        {
+            LoadSaveGeoList.Save(GameEngine.myRendergeo);
+        }
+        private void LoadScene(object sender, MouseButtonEventArgs e)
+        {
+            LoadSaveGeoList.Load(GameEngine.myRendergeo);
+            //IterateGeoTree.LayoutNodes(GameEngine.myRendergeo);
+            UpdateCanvas();
         }
         private void Canvas_MouseMove(object sender, MouseEventArgs e)
         {

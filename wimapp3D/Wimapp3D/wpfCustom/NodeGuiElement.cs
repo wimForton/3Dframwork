@@ -32,8 +32,8 @@ namespace GameEngine
             SetColumnSpan(border, 3);
             SetRowSpan(border, 3);
             Children.Add(border);
-            myTranslate.X = 15;
-            myTranslate.Y = 15;
+            myTranslate.X = myRenderableObject.GuiNodePosition.X;
+            myTranslate.Y = myRenderableObject.GuiNodePosition.Y;
             RenderTransform = myTranslate;
             myRenderableObject.GuiNodePosition = new Vector(myTranslate.X, myTranslate.Y, 0);
             MouseLeftButtonDown += NodeGuiElement_MouseLeftButtonDown;
@@ -97,6 +97,7 @@ namespace GameEngine
                 //then create, replace
                 IRenderableGeo.ChildLookingForGeoParent.InputObject = myRenderableObject;
                 myRenderableObject.ChildGeoNodes.Add(IRenderableGeo.ChildLookingForGeoParent);
+                myRenderableObject.ChildGeoNodeIds.Add(IRenderableGeo.ChildLookingForGeoParent.Id);
                 Wimapp3D.MainWindow.AppWindow.UpdateCanvas();
                 IRenderableGeo.ChildLookingForGeoParent.NeedsUpdate = true;
                 IRenderableGeo.ChildLookingForGeoParent = null;
