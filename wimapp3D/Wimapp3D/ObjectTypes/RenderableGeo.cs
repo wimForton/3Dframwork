@@ -8,14 +8,17 @@ using System.Windows.Controls;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System.ComponentModel;
 
 namespace GameEngine
 {
     [JsonObject(MemberSerialization.OptIn)]
     abstract class RenderableGeo : IRenderableGeo
     {
-        [JsonProperty]
         public int Id { get; set; } = -1;
+        public static List<int> SelectedObjects { get; set; }
+        [JsonProperty]
+        public List<int> ChildGeoNodeIds { get; set; } = new List<int>();
         [JsonProperty]
         public string Name { get; set; } = "Unnamed";
         [JsonProperty]
@@ -28,9 +31,8 @@ namespace GameEngine
         public Vector GuiNodePosition { get; set; } = new Vector(10, 10, 10);
         [JsonProperty]
         public List<AnimatableParameter> AnimatableParameters { get; set; }
-        [JsonProperty]
-        public List<int> ChildGeoNodeIds { get; set; } = new List<int>();
-        public static int HighestId { get; set; }
+        public static int HighestId { get; set; } = -1;
+        public static int OffsetId { get; set; } = 0;
         public IRenderableGeo InputObject { get; set; }
         [JsonProperty]
         public bool isRootGeoNode { get; set; } = false;
@@ -39,6 +41,7 @@ namespace GameEngine
         //[JsonProperty]
         public List<IAnimationControl> AnimationControls { get; set; }
         public NodeGuiElement GuiNode { get; set; }
+        public PropertyControllerGrid PropertyGrid { get; set; }
         public List<Polygon> Polygons { get; set; } = new List<Polygon>();
         public List<Vector> Points { get; set; } = new List<Vector>();
         public List<Vector> UVs { get; set; } = new List<Vector>();
@@ -49,11 +52,48 @@ namespace GameEngine
         public bool NeedsInputObject { get; set; } = false;
         public List<float> myVaoList = new List<float>();
         public float[] VaoArray;
-        public RenderableGeo() { }
         public abstract void Update();
         public virtual void UpdateVAO() { }
         public virtual void OpenProportiesWindow() { }
         public virtual void CheckProportiesWindow() { }
+        public RenderableGeo() 
+        {
+            IRenderableGeo.HighestId++;
+            Id = IRenderableGeo.HighestId + OffsetId;
+            
+            PropertyGrid = new PropertyControllerGrid(Name);
+            Button SaveButton = MyButton.CreateButton("Save Json file");
+            SaveButton.Click += SaveButton_Click;
+            PropertyGrid.ControlsStackPanel.Children.Add(SaveButton);
+            Button KeyAll = MyButton.CreateButton("Key All");
+            KeyAll.Click += KeyAll_Click;
+            PropertyGrid.ControlsStackPanel.Children.Add(KeyAll);
+            AnimationTime.Instance.PropertyChanged += Instance_PropertyChanged;
+        }
+        internal void SetKeyButton_Click(object sender, RoutedEventArgs e)
+        {
+            int myValue = (int)((Button)sender).Tag;
+            AnimatableParameters[myValue].SetKeyAtFrame(AnimationControls[myValue].Value, AnimationTime.Instance.Frame);
+        }
+        internal void KeyAll_Click(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < AnimatableParameters.Count; i++)
+            {
+                AnimatableParameters[i].SetKeyAtFrame(AnimationControls[i].Value, AnimationTime.Instance.Frame);
+            }
+        }
+        internal void Instance_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            for (int i = 0; i < AnimationControls.Count; i++)
+            {
+                AnimationControls[i].UpdateControl(AnimatableParameters[i].GetValueAtFrame(AnimationTime.Instance.Frame));
+            }
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            WriteJson();
+        }
 
         public void MakeVaoList()
         {

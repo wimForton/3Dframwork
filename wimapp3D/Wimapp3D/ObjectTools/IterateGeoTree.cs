@@ -8,13 +8,53 @@ namespace GameEngine
 {
     class IterateGeoTree
     {
+        public static void OffsetChildIds(List<IRenderableGeo> inGeoList)
+        {
+            
+            if (inGeoList != null)
+            {
+                for (int i = 0; i < inGeoList.Count; i++)
+                {
+                    if(inGeoList[i].Id > IRenderableGeo.OffsetId - 1)
+                    {
+                        for (int j = 0; j < inGeoList[i].ChildGeoNodeIds.Count; j++)
+                        {
+                            inGeoList[j].ChildGeoNodeIds[j] += IRenderableGeo.OffsetId;
+                        }
+                    }
+                }
+            }
+        }
+        public static void RefreshNodes(List<IRenderableGeo> inGeoList) 
+        {
+            if(inGeoList != null)
+            {
+                for (int i = 0; i < inGeoList.Count; i++)
+                {
+                    inGeoList[i].GuiNode.myTranslate.X = inGeoList[i].GuiNodePosition.X;
+                    inGeoList[i].GuiNode.myTranslate.Y = inGeoList[i].GuiNodePosition.Y;
+                    if (inGeoList[i].isRootGeoNode)
+                    {
+                        inGeoList[i].NeedsUpdate = true;
+                    }
+                }
+            }
+        }
+        public static void ReconnectNodes(List<IRenderableGeo> inGeoList)
+        {
+            foreach (var renderableGeo in inGeoList)
+            {
+                foreach (var childNodeId in renderableGeo.ChildGeoNodeIds)
+                {
+                    renderableGeo.ChildGeoNodes.Add(inGeoList[childNodeId]);
+                    inGeoList[childNodeId].InputObject = renderableGeo;
+                }
+            }
+        }
         public static void ParentChildIterate(List<IRenderableGeo> inGeoList)
         {
 
-            //for (int i = 0; i < inGeoList.Count; i++)
-            //{
-            //    inGeoList[i].Update();
-            //}
+
 
             List<IRenderableGeo> startPoints = new List<IRenderableGeo>();
             for (int i = 0; i < inGeoList.Count; i++)//lijst start met ouders
@@ -30,12 +70,8 @@ namespace GameEngine
                 for (int i = 0; i < startPoints.Count; i++)//voor alle ouders
                 {
 
-                    //if (startPoints[i].NeedsUpdate)
-                    //{
-                    startPoints[i].Update();
-                    //startPoints[i].NeedsUpdate = false;//moet in object gebeuren anders kan object niets beslissen
-                    //    startPoints[i].OutputNeedsUpdate = true;
-                    //}
+                    startPoints[i].Update();//indien needsupdate == false gebeurt er niets
+
                     for (int child = 0; child < startPoints[i].ChildGeoNodes.Count; child++)//voor alle kinderen
                     {
                         if (startPoints[i].OutputNeedsUpdate)//ouders zijn updated, volgende while de kinderen

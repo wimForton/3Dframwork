@@ -13,16 +13,16 @@
       "Name": "multiprim",
       "Position": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": -2.8399999999999985,
+        "X": -4.589999999999997,
         "Y": 0.0,
-        "Z": -2.38,
+        "Z": -2.4599999999999995,
         "Dimensions": 3
       },
       "Rotation": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.0,
+        "X": 0.7400000000000003,
         "Y": 0.0,
-        "Z": 0.0,
+        "Z": -0.7500000000000002,
         "Dimensions": 3
       },
       "Scale": {
@@ -34,8 +34,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 23.0,
-        "Y": 15.0,
+        "X": 188.0,
+        "Y": 51.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -158,9 +158,9 @@
       },
       "Rotation": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.0,
-        "Y": 0.0,
-        "Z": 0.0,
+        "X": 0.22,
+        "Y": -0.7,
+        "Z": 2.150000000000001,
         "Dimensions": 3
       },
       "Scale": {
@@ -172,8 +172,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 21.0,
-        "Y": 129.0,
+        "X": 109.0,
+        "Y": 235.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -217,16 +217,16 @@
       "Name": "Twist",
       "Position": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": -3.0500000000000003,
+        "X": -3.649999999999999,
         "Y": 0.0,
-        "Z": 2.23,
+        "Z": 2.2399999999999998,
         "Dimensions": 3
       },
       "Rotation": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.0,
+        "X": 0.9500000000000002,
         "Y": 0.0,
-        "Z": 0.0,
+        "Z": -0.6099999999999999,
         "Dimensions": 3
       },
       "Scale": {
@@ -238,8 +238,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 114.0,
-        "Y": 135.0,
+        "X": 223.0,
+        "Y": 249.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -285,9 +285,9 @@
       "Name": "multiprim",
       "Position": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 2.9299999999999997,
+        "X": 3.889999999999999,
         "Y": 0.0,
-        "Z": 2.309999999999999,
+        "Z": 1.509999999999999,
         "Dimensions": 3
       },
       "Rotation": {
@@ -306,8 +306,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 129.0,
-        "Y": 11.0,
+        "X": 439.0,
+        "Y": 75.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -321,6 +321,38 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 3.0
+              },
+              "51": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 3.0
+              },
+              "74": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 3.0
+              },
+              "100": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 34.0
+              },
+              "121": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 34.0
+              },
+              "137": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 34.0
+              },
+              "143": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 34.0
+              },
+              "163": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 34.0
+              },
+              "173": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 34.0
               }
             }
           },
@@ -330,7 +362,39 @@
               "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 10.0
+                "Value": 100.0
+              },
+              "51": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 100.0
+              },
+              "74": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 100.0
+              },
+              "100": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 6.0
+              },
+              "121": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 19.0
+              },
+              "137": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 19.0
+              },
+              "143": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 19.0
+              },
+              "163": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 19.0
+              },
+              "173": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 19.0
               }
             }
           },
@@ -341,6 +405,38 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 0.0
+              },
+              "51": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "74": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "100": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "121": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "137": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "143": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "163": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.48
+              },
+              "173": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.48
               }
             }
           },
@@ -351,6 +447,38 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 1.0
+              },
+              "51": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "74": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "100": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "121": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "137": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.51
+              },
+              "143": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.51
+              },
+              "163": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.51
+              },
+              "173": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
               }
             }
           },
@@ -359,6 +487,38 @@
             "KeyFrames": {
               "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
               "0": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "51": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "74": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "100": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "121": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "137": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "143": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "163": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "173": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 0.0
               }
@@ -371,6 +531,38 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 0.5
+              },
+              "51": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.5
+              },
+              "74": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.5
+              },
+              "100": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.5
+              },
+              "121": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.5
+              },
+              "137": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.5
+              },
+              "143": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.5
+              },
+              "163": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.5
+              },
+              "173": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.5
               }
             }
           },
@@ -381,6 +573,38 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 0.0
+              },
+              "51": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.1300000000000001
+              },
+              "74": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.1300000000000001
+              },
+              "100": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.1300000000000001
+              },
+              "121": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.1300000000000001
+              },
+              "137": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.1300000000000001
+              },
+              "143": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.1300000000000001
+              },
+              "163": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.1300000000000001
+              },
+              "173": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.1300000000000001
               }
             }
           },
@@ -391,6 +615,42 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 0.0
+              },
+              "51": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "61": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 3.0
+              },
+              "74": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 3.0
+              },
+              "100": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 6.0
+              },
+              "121": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 6.0
+              },
+              "137": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 6.0
+              },
+              "143": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 6.0
+              },
+              "163": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 6.0
+              },
+              "173": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 6.0
               }
             }
           },
@@ -401,6 +661,38 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 1.0
+              },
+              "51": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "74": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "100": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.48
+              },
+              "121": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.48
+              },
+              "137": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.48
+              },
+              "143": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.48
+              },
+              "163": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.48
+              },
+              "173": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.48
               }
             }
           }
@@ -417,9 +709,9 @@
       "Name": "Twist",
       "Position": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.8899999999999999,
+        "X": -0.06000000000000017,
         "Y": 0.0,
-        "Z": -1.1900000000000004,
+        "Z": -2.3700000000000006,
         "Dimensions": 3
       },
       "Rotation": {
@@ -438,8 +730,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 210.0,
-        "Y": 128.0,
+        "X": 369.0,
+        "Y": 320.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -479,16 +771,16 @@
       "Name": "Twist",
       "Position": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.0,
+        "X": 0.12000000000000006,
         "Y": 0.0,
-        "Z": 0.0,
+        "Z": 1.8700000000000012,
         "Dimensions": 3
       },
       "Rotation": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.0,
+        "X": 0.06999999999999984,
         "Y": 0.0,
-        "Z": 0.0,
+        "Z": -0.30000000000000004,
         "Dimensions": 3
       },
       "Scale": {
@@ -500,8 +792,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 27.0,
-        "Y": 240.0,
+        "X": 134.0,
+        "Y": 417.0,
         "Z": 0.0,
         "Dimensions": 3
       },

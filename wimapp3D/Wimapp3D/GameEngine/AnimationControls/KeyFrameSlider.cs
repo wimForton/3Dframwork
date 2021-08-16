@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace GameEngine
     class KeyFrameSlider : AnimationControl, IAnimationControl
     {
 
-        private double sliderValue;
+
 
         public KeyFrameSlider(int Id, string name, double inValue, double inMinimum, double inMaximum, double inTickFrequency)
         {
@@ -52,7 +53,7 @@ namespace GameEngine
 
             mySlider = new MySlider(inValue, inMinimum, inMaximum, inTickFrequency);
             mySlider.ValueChanged += MySlider_ValueChanged;
-            sliderValue = inValue;
+            Value = inValue;
             Grid.SetColumn(mySlider, 2);
             mySlider.Name = "name";
             mySlider.Margin = new Thickness(2, 5, 2, 5);
@@ -73,10 +74,14 @@ namespace GameEngine
             Grid.SetColumn(SetKeyButton, 3);
             AnimCtrlGrid.Children.Add(SetKeyButton);
         }
+        public override void UpdateControl(double inValue)
+        {
+            mySlider.Value = inValue;
+        }
 
         private void MySlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            sliderValue = mySlider.Value;
+            Value = mySlider.Value;
         }
     }
 }

@@ -9,11 +9,8 @@ namespace GameEngine
 {
     interface IRenderableGeo
     {
-        //public static List<IRenderableGeo> ConnectionsStart { get; set; }
-        //public static List<IRenderableGeo> ConnectionsEnd { get; set; }
-        //public List<IRenderableGeo> getConnectionsStart();
-        //public List<IRenderableGeo> getConnectionsEnd();
         public int Id { get; set; }
+        public static List<int> SelectedObjects { get; set; }
         public string Name { get; set; }
         public Vector Position { get; set; }
         public Vector Rotation { get; set; }
@@ -26,7 +23,9 @@ namespace GameEngine
         public List<AnimatableParameter> AnimatableParameters { get; set;}
         public List<IAnimationControl> AnimationControls { get; set; }
         public NodeGuiElement GuiNode { get; set; }
+        public PropertyControllerGrid PropertyGrid { get; set; }
         public static int HighestId { get; set; }
+        public static int OffsetId { get; set; }
         public List<Polygon> Polygons { get; set; }
         public List<Vector> Points { get; set; }
         public List<Vector> UVs { get; set; }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,7 @@ namespace GameEngine
         public static bool connectionDragging = false;
 
         private Grid RootGrid { get; set; } = new Grid();
+        //[JsonProperty]
         public TranslateTransform myTranslate = new TranslateTransform();
         //public DrawConnection myConnection;
         private IRenderableGeo myRenderableObject;

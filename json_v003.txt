@@ -34,8 +34,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 23.0,
-        "Y": 15.0,
+        "X": 188.0,
+        "Y": 51.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -172,8 +172,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 21.0,
-        "Y": 129.0,
+        "X": 109.0,
+        "Y": 235.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -238,8 +238,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 114.0,
-        "Y": 135.0,
+        "X": 223.0,
+        "Y": 249.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -306,8 +306,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 129.0,
-        "Y": 11.0,
+        "X": 439.0,
+        "Y": 75.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -438,8 +438,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 210.0,
-        "Y": 128.0,
+        "X": 369.0,
+        "Y": 320.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -500,8 +500,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 27.0,
-        "Y": 240.0,
+        "X": 134.0,
+        "Y": 417.0,
         "Z": 0.0,
         "Dimensions": 3
       },

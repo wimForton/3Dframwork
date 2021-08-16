@@ -34,26 +34,15 @@ namespace GameEngine
         private AnimatableParameter ApRoll { get; set; }
         private AnimatableParameter ApSphereRadius { get; set; }
 
-        PropertyControllerGrid PropertyGrid;
 
 
-        public MultiPrimitive()
+        public MultiPrimitive() : base()
         {
-            IRenderableGeo.HighestId++;
-            Id = IRenderableGeo.HighestId;
-
             isRootGeoNode = true;
-            Name = "unnamed";
+            Name = "multiprim";
             Rows = 10;
             Columns = 10;
-            
-            PropertyGrid = new PropertyControllerGrid(Name);
-            Button SaveButton = MyButton.CreateButton("Save Json file");
-            SaveButton.Click += SaveButton_Click;
-            PropertyGrid.ControlsStackPanel.Children.Add(SaveButton);
-            Button KeyAll = MyButton.CreateButton("Key All");
-            KeyAll.Click += KeyAll_Click;
-            PropertyGrid.ControlsStackPanel.Children.Add(KeyAll);
+            PropertyGrid.GridName = Name;
             if (AnimatableParameters == null)
             {
                 AnimatableParameters = new List<AnimatableParameter>()
@@ -98,51 +87,26 @@ namespace GameEngine
             }
 
         }
-
-        private void KeyAll_Click(object sender, RoutedEventArgs e)
-        {
-            for (int i = 0; i < AnimatableParameters.Count; i++)
-            {
-                AnimatableParameters[i].SetKeyAtFrame(AnimationControls[i].mySlider.Value, AnimationTime.Instance.Frame);
-            }
-        }
-
-        private void SetKeyButton_Click(object sender, RoutedEventArgs e)
-        {
-            int myValue = (int)((Button)sender).Tag;
-            AnimatableParameters[myValue].SetKeyAtFrame(AnimationControls[myValue].mySlider.Value, AnimationTime.Instance.Frame);
-        }
-
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
-        {
-            WriteJson();
-        }
+        //private void SetKeyButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    int myValue = (int)((Button)sender).Tag;
+        //    AnimatableParameters[myValue].SetKeyAtFrame(AnimationControls[myValue].Value, AnimationTime.Instance.Frame);
+        //}
 
         private void Sliders_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-
-            Rows = (int)AnimationControls[0].mySlider.Value;
-            Columns = (int)AnimationControls[1].mySlider.Value;
-            WrapStart = AnimationControls[2].mySlider.Value;
-            WrapEnd = AnimationControls[3].mySlider.Value;
-            RowWrapStart = AnimationControls[4].mySlider.Value;
-            RowWrapEnd = AnimationControls[5].mySlider.Value;
-            Middle = AnimationControls[6].mySlider.Value;
-            Roll = AnimationControls[7].mySlider.Value;
-            SphereRadius = AnimationControls[8].mySlider.Value;
+            Rows = (int)AnimationControls[0].Value;
+            Columns = (int)AnimationControls[1].Value;
+            WrapStart = AnimationControls[2].Value;
+            WrapEnd = AnimationControls[3].Value;
+            RowWrapStart = AnimationControls[4].Value;
+            RowWrapEnd = AnimationControls[5].Value;
+            Middle = AnimationControls[6].Value;
+            Roll = AnimationControls[7].Value;
+            SphereRadius = AnimationControls[8].Value;
 
             NeedsUpdate = true;
         }
-
-        private void Instance_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
-            for (int i = 0; i < AnimationControls.Count; i++)
-            {
-                AnimationControls[i].mySlider.Value = AnimatableParameters[i].GetValueAtFrame(AnimationTime.Instance.Frame);
-            }
-
-        }
-
         public override void OpenProportiesWindow()
         {
             if (Wimapp3D.MainWindow.AppWindow.ProportieWindowStack.Children.IndexOf(PropertyGrid) < 0)
@@ -168,7 +132,7 @@ namespace GameEngine
             UVs.Clear();
             Normals.Clear();
             Polygons.Clear();
-            //Rows = AnimatableParameters[0].GetValueAtFrame(AnimationTime.Instance.Frame);
+
             if (Rows < 2) Rows = 2;
             if (Columns < 2) Columns = 2;
 

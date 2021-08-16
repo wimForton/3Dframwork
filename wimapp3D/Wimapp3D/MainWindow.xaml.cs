@@ -70,7 +70,7 @@ namespace Wimapp3D
             //Twist2.Position.X = 4;
             //myObjects.Add(Twist2);
 
-
+            IRenderableGeo.HighestId = -1;
             GameEngine = new RenderOpenGlTemplate(myObjects, 30f, 1280, 720, "Mixer");
             GameEngine.Start();
             GameEngine.Run();

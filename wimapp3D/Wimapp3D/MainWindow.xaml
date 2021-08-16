@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="720" Width="1024" Background="#FF787878">
 
+
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
             <RowDefinition Height="40" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="40" />
@@ -18,7 +20,19 @@
             <ColumnDefinition Width="350" />
 
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Row="0" Orientation="Horizontal">
+        <DockPanel Background="#FF303030" Grid.ColumnSpan="2">
+            <Menu DockPanel.Dock="Top" Background="#FF303030" Foreground="White">
+                <MenuItem Header="_File" Background="#FF303030">
+                <MenuItem Header="_New" Background="#FF303030"/>
+                <MenuItem Header="_Open" Background="#FF303030"/>
+                <MenuItem Header="_Save" Background="#FF303030"/>
+                <Separator Background="#FF303030"/>
+                <MenuItem Header="_Exit" Background="#FF303030"/>
+                </MenuItem>
+            </Menu>
+            <TextBox AcceptsReturn="True" />
+        </DockPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
             <Button Content=" Obj loader " PreviewMouseLeftButtonDown="AddPolyObjectLoader" HorizontalAlignment="Left" 
                     Margin="5,5,0,0" VerticalAlignment="Top" Height="20"
                     Background="#FF303030" Foreground="White"/>
@@ -30,7 +44,7 @@
                     Background="#FF303030" Foreground="White"/>
             <TextBlock x:Name="TimeText" Text ="FrameNr: " Foreground="White" Margin="10,5,0,0" FontSize = "15"/>
         </StackPanel> 
-        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
             <Button Content=" Layout Nodes " PreviewMouseLeftButtonDown="LayoutNodes"
                     Margin="5,5,5,0" VerticalAlignment="Top" Height="20"
                     Background="#FF303030" Foreground="White" Grid.Column="1"/>
@@ -44,23 +58,23 @@
                     Margin="5,5,5,0" VerticalAlignment="Top" Height="20"
                     Background="#FF303030" Foreground="White" Grid.Column="1"/>
         </StackPanel>
-        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1" Grid.Column="1">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="2" Grid.Column="1">
             <StackPanel x:Name="ProportieWindowStack" Background="#FF616060" CanVerticallyScroll="True">
             
             </StackPanel>
         </ScrollViewer>
-        <Canvas Grid.Row="1" x:Name="MainWindowCanvasConnections" Background="#FF2B2B2B" ClipToBounds="True" MouseMove="Canvas_MouseMove">
+        <Canvas Grid.Row="2" x:Name="MainWindowCanvasConnections" Background="#FF2B2B2B" ClipToBounds="True" MouseMove="Canvas_MouseMove">
             
 
 
         </Canvas>
 
-        <Canvas Grid.Row="1" x:Name="MainWindowCanvas" ClipToBounds="True">
+        <Canvas Grid.Row="2" x:Name="MainWindowCanvas" ClipToBounds="True">
 
 
 
         </Canvas>
-        <DockPanel  Background="#FF5B5B5B" x:Name="TimeSliderStack" Grid.Row="2" Grid.ColumnSpan="2">
+        <DockPanel  Background="#FF5B5B5B" x:Name="TimeSliderStack" Grid.Row="3" Grid.ColumnSpan="2">
 
         </DockPanel>
     </Grid>

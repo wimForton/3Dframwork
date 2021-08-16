@@ -12,6 +12,8 @@ namespace GameEngine
         public AnimatableParameter MyAnimatableParameter { get; set; }
         public Grid AnimCtrlGrid { get; set; }
         public MySlider mySlider { get; set; }
+        public double Value { get; set; }
         public Button SetKeyButton { get; set; }
+        public virtual void UpdateControl(double inValue) { }
     }
 }
