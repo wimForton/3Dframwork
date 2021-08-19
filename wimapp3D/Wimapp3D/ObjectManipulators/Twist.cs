@@ -20,6 +20,13 @@ namespace GameEngine
         {
             isRootGeoNode = false;
             Name = "Twist";
+            PropertyGrid = new PropertyControllerGrid(Name);
+            Button SaveButton = MyButton.CreateButton("Save Json file");
+            SaveButton.Click += SaveButton_Click;
+            PropertyGrid.ControlsStackPanel.Children.Add(SaveButton);
+            Button KeyAll = MyButton.CreateButton("Key All");
+            KeyAll.Click += KeyAll_Click;
+            PropertyGrid.ControlsStackPanel.Children.Add(KeyAll);
             NeedsInputObject = true;
             NeedsUpdate = true;
             if(inObject != null)

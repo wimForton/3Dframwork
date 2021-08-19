@@ -61,13 +61,8 @@ namespace GameEngine
             IRenderableGeo.HighestId++;
             Id = IRenderableGeo.HighestId + OffsetId;
             
-            PropertyGrid = new PropertyControllerGrid(Name);
-            Button SaveButton = MyButton.CreateButton("Save Json file");
-            SaveButton.Click += SaveButton_Click;
-            PropertyGrid.ControlsStackPanel.Children.Add(SaveButton);
-            Button KeyAll = MyButton.CreateButton("Key All");
-            KeyAll.Click += KeyAll_Click;
-            PropertyGrid.ControlsStackPanel.Children.Add(KeyAll);
+
+
             AnimationTime.Instance.PropertyChanged += Instance_PropertyChanged;
         }
         internal void SetKeyButton_Click(object sender, RoutedEventArgs e)
@@ -84,13 +79,16 @@ namespace GameEngine
         }
         internal void Instance_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            for (int i = 0; i < AnimationControls.Count; i++)
+            if (AnimationControls != null)
             {
-                AnimationControls[i].UpdateControl(AnimatableParameters[i].GetValueAtFrame(AnimationTime.Instance.Frame));
+                for (int i = 0; i < AnimationControls.Count; i++)
+                {
+                    AnimationControls[i].UpdateControl(AnimatableParameters[i].GetValueAtFrame(AnimationTime.Instance.Frame));
+                }
             }
         }
 
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        internal void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             WriteJson();
         }

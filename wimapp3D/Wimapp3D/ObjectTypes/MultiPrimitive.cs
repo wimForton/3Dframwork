@@ -42,7 +42,14 @@ namespace GameEngine
             Name = "multiprim";
             Rows = 10;
             Columns = 10;
+            PropertyGrid = new PropertyControllerGrid(Name);
             PropertyGrid.GridName = Name;
+            Button SaveButton = MyButton.CreateButton("Save Json file");
+            SaveButton.Click += SaveButton_Click;
+            PropertyGrid.ControlsStackPanel.Children.Add(SaveButton);
+            Button KeyAll = MyButton.CreateButton("Key All");
+            KeyAll.Click += KeyAll_Click;
+            PropertyGrid.ControlsStackPanel.Children.Add(KeyAll);
             if (AnimatableParameters == null)
             {
                 AnimatableParameters = new List<AnimatableParameter>()

@@ -23,6 +23,7 @@ namespace GameEngine
             FilePath = inFilePath;
             GuiNode = new NodeGuiElement(this);
             Wimapp3D.MainWindow.AppWindow.MainWindowCanvas.Children.Add(GuiNode);
+
             ProportiesGrid = new PolyObjGrid(this);
             //Position.Z = -30;
             if (FilePath != null)
