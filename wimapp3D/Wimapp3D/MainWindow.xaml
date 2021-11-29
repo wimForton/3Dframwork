@@ -42,6 +42,9 @@
             <Button Content=" Twist " PreviewMouseLeftButtonDown="AddTwist" HorizontalAlignment="Left" 
                     Margin="5,5,0,0" VerticalAlignment="Top" Height="20"
                     Background="#FF303030" Foreground="White"/>
+            <Button Content=" Bend " PreviewMouseLeftButtonDown="AddBend" HorizontalAlignment="Left" 
+                    Margin="5,5,0,0" VerticalAlignment="Top" Height="20"
+                    Background="#FF303030" Foreground="White"/>
             <TextBlock x:Name="TimeText" Text ="FrameNr: " Foreground="White" Margin="10,5,0,0" FontSize = "15"/>
         </StackPanel> 
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">

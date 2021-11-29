@@ -22,7 +22,7 @@ namespace Wimapp3D
     /// </summary>
     public partial class MainWindow : Window
     {
-        RenderOpenGlTemplate gameEngine;
+        RenderOpenGl3DObject gameEngine;
         public MainWindow()
         {
             InitializeComponent();
@@ -35,16 +35,16 @@ namespace Wimapp3D
 
             List<IRenderableGeo> myObjects = new List<IRenderableGeo>();
 
-            //myObjects.Add(new PolyObjectLoader("PionA.obj"));
-            //myObjects.Add(new PolyObjectLoader("PionB.obj"));
-            //myObjects.Add(new PolyObjectLoader("PionC.obj"));
-            //myObjects.Add(new PolyObjectLoader("PionD.obj"));
-            //myObjects.Add(new PolyObjectLoader("GanzenBord.obj"));
+            myObjects.Add(new PolyObjectLoader("PionA.obj"));
+            myObjects.Add(new PolyObjectLoader("PionB.obj"));
+            myObjects.Add(new PolyObjectLoader("PionC.obj"));
+            myObjects.Add(new PolyObjectLoader("PionD.obj"));
+            myObjects.Add(new PolyObjectLoader("GanzenBord.obj"));
             //SpriteText myText = new SpriteText("TT");
 
-            myObjects.Add(new MultiPrimitive(20, 20));
+            //myObjects.Add(new MultiPrimitive(20, 20));
 
-            gameEngine = new RenderOpenGlTemplate(myObjects, 30f, 1280, 720, "Ganzenbord 3D");
+            gameEngine = new RenderOpenGl3DObject(myObjects, 30f, 1280, 720, "Ganzenbord 3D");
             gameEngine.Start();
             gameEngine.Run();
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q5s2WB0eaN4z8cmCY6KamqPlPDxXfk18gkcQZwx4aY745OyVLMTDfKla6Tnj0paJXvz8reDAagYALOYF2Fm1qw==",
+  "dgSpecHash": "qZg2u6dpSywUXjutx99HFqbWexbPTuVE577lL7enOSBNy5HZ1foCq8hqDqmZNVfNMK7XFMamQr+J3NSiY67YXQ==",
   "success": true,
-  "projectFilePath": "H:\\cursus_informatica\\3Dapplication\\wimapp3D\\Wimapp3D\\Wimapp3D.csproj",
+  "projectFilePath": "H:\\cursus_informatica\\3Dapplication\\wimapp3D - Copy (8)\\Wimapp3D\\Wimapp3D.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wim\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\wim\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",

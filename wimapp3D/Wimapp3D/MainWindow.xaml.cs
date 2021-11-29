@@ -103,6 +103,15 @@ namespace Wimapp3D
             myTwist.GuiNodePosition.Y = 130;
             GameEngine.myRendergeo.Add(myTwist);
         }
+        private void AddBend(object sender, MouseButtonEventArgs e)
+        {
+            IRenderableGeo myBend = new Bend(null);
+            myBend.GuiNode.myTranslate.X = 130;
+            myBend.GuiNode.myTranslate.Y = 130;
+            myBend.GuiNodePosition.X = 130;
+            myBend.GuiNodePosition.Y = 130;
+            GameEngine.myRendergeo.Add(myBend);
+        }
         private void LayoutNodes(object sender, MouseButtonEventArgs e)
         {
             IterateGeoTree.LayoutNodes(GameEngine.myRendergeo);

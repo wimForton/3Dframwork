@@ -6,16 +6,15 @@
       "ChildGeoNodeIds": {
         "$type": "System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
         "$values": [
-          1,
-          2
+          1
         ]
       },
       "Name": "multiprim",
       "Position": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": -2.8399999999999985,
+        "X": -2.29,
         "Y": 0.0,
-        "Z": -2.38,
+        "Z": -0.18000000000000005,
         "Dimensions": 3
       },
       "Rotation": {
@@ -34,8 +33,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 23.0,
-        "Y": 15.0,
+        "X": 263.0,
+        "Y": 90.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -49,278 +48,26 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 10.0
-              }
-            }
-          },
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 83.0
-              }
-            }
-          },
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.0
-              }
-            }
-          },
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.09
               },
-              "87": {
+              "36": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 1.0
-              }
-            }
-          },
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.0
-              }
-            }
-          },
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.5
-              }
-            }
-          },
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 1.28
-              }
-            }
-          },
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.0
-              }
-            }
-          },
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.23
-              }
-            }
-          }
-        ]
-      },
-      "isRootGeoNode": true
-    },
-    {
-      "$type": "GameEngine.Twist, Wimapp3D",
-      "ChildGeoNodeIds": {
-        "$type": "System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
-        "$values": [
-          5
-        ]
-      },
-      "Name": "Twist",
-      "Position": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 5.0299999999999985,
-        "Y": 0.0,
-        "Z": -2.8899999999999997,
-        "Dimensions": 3
-      },
-      "Rotation": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.0,
-        "Y": 0.0,
-        "Z": 0.0,
-        "Dimensions": 3
-      },
-      "Scale": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 1.0,
-        "Y": 1.0,
-        "Z": 1.0,
-        "Dimensions": 3
-      },
-      "GuiNodePosition": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 21.0,
-        "Y": 129.0,
-        "Z": 0.0,
-        "Dimensions": 3
-      },
-      "AnimatableParameters": {
-        "$type": "System.Collections.Generic.List`1[[GameEngine.AnimatableParameter, Wimapp3D]], System.Private.CoreLib",
-        "$values": [
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": -1.52
+                "Value": 10.0
               },
-              "81": {
+              "60": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 3.7200000000000006
-              }
-            }
-          },
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.0
-              }
-            }
-          }
-        ]
-      },
-      "isRootGeoNode": false
-    },
-    {
-      "$type": "GameEngine.Twist, Wimapp3D",
-      "ChildGeoNodeIds": {
-        "$type": "System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
-        "$values": []
-      },
-      "Name": "Twist",
-      "Position": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": -3.0500000000000003,
-        "Y": 0.0,
-        "Z": 2.23,
-        "Dimensions": 3
-      },
-      "Rotation": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.0,
-        "Y": 0.0,
-        "Z": 0.0,
-        "Dimensions": 3
-      },
-      "Scale": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 1.0,
-        "Y": 1.0,
-        "Z": 1.0,
-        "Dimensions": 3
-      },
-      "GuiNodePosition": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 114.0,
-        "Y": 135.0,
-        "Z": 0.0,
-        "Dimensions": 3
-      },
-      "AnimatableParameters": {
-        "$type": "System.Collections.Generic.List`1[[GameEngine.AnimatableParameter, Wimapp3D]], System.Private.CoreLib",
-        "$values": [
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 1.8600000000000003
+                "Value": 32.0
               },
-              "54": {
+              "149": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": -2.21
-              }
-            }
-          },
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
+                "Value": 32.0
+              },
+              "168": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.0
-              }
-            }
-          }
-        ]
-      },
-      "isRootGeoNode": false
-    },
-    {
-      "$type": "GameEngine.MultiPrimitive, Wimapp3D",
-      "ChildGeoNodeIds": {
-        "$type": "System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
-        "$values": [
-          4
-        ]
-      },
-      "Name": "multiprim",
-      "Position": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 2.9299999999999997,
-        "Y": 0.0,
-        "Z": 2.309999999999999,
-        "Dimensions": 3
-      },
-      "Rotation": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.0,
-        "Y": 0.0,
-        "Z": 0.0,
-        "Dimensions": 3
-      },
-      "Scale": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 1.0,
-        "Y": 1.0,
-        "Z": 1.0,
-        "Dimensions": 3
-      },
-      "GuiNodePosition": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 129.0,
-        "Y": 11.0,
-        "Z": 0.0,
-        "Dimensions": 3
-      },
-      "AnimatableParameters": {
-        "$type": "System.Collections.Generic.List`1[[GameEngine.AnimatableParameter, Wimapp3D]], System.Private.CoreLib",
-        "$values": [
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
+                "Value": 32.0
+              },
+              "200": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 3.0
+                "Value": 32.0
               }
             }
           },
@@ -331,6 +78,26 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 10.0
+              },
+              "36": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 10.0
+              },
+              "60": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 61.0
+              },
+              "149": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 61.0
+              },
+              "168": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 61.0
+              },
+              "200": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 61.0
               }
             }
           },
@@ -339,6 +106,26 @@
             "KeyFrames": {
               "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
               "0": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "36": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "60": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "149": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "168": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "200": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 0.0
               }
@@ -351,6 +138,26 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 1.0
+              },
+              "36": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "60": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "149": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.12
+              },
+              "168": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.12
+              },
+              "200": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
               }
             }
           },
@@ -359,6 +166,26 @@
             "KeyFrames": {
               "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
               "0": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "36": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "60": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "149": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "168": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "200": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 0.0
               }
@@ -371,6 +198,26 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 0.5
+              },
+              "36": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.5
+              },
+              "60": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "149": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "168": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.59
+              },
+              "200": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.59
               }
             }
           },
@@ -381,6 +228,26 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 0.0
+              },
+              "36": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 2.86
+              },
+              "60": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 2.86
+              },
+              "149": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 2.86
+              },
+              "168": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 2.86
+              },
+              "200": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 2.86
               }
             }
           },
@@ -391,6 +258,26 @@
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 0.0
+              },
+              "36": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "60": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "149": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "168": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 0.0
+              },
+              "200": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": -6.0
               }
             }
           },
@@ -399,6 +286,26 @@
             "KeyFrames": {
               "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
               "0": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "36": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "60": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "149": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "168": {
+                "$type": "GameEngine.KeyFrame, Wimapp3D",
+                "Value": 1.0
+              },
+              "200": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 1.0
               }
@@ -417,9 +324,9 @@
       "Name": "Twist",
       "Position": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.8899999999999999,
+        "X": 2.4800000000000004,
         "Y": 0.0,
-        "Z": -1.1900000000000004,
+        "Z": -0.07000000000000008,
         "Dimensions": 3
       },
       "Rotation": {
@@ -438,8 +345,8 @@
       },
       "GuiNodePosition": {
         "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 210.0,
-        "Y": 128.0,
+        "X": 300.0,
+        "Y": 243.0,
         "Z": 0.0,
         "Dimensions": 3
       },
@@ -452,7 +359,7 @@
               "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
               "0": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.0
+                "Value": 0.4800000000000004
               }
             }
           },
@@ -461,76 +368,6 @@
             "KeyFrames": {
               "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
               "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.0
-              }
-            }
-          }
-        ]
-      },
-      "isRootGeoNode": false
-    },
-    {
-      "$type": "GameEngine.Twist, Wimapp3D",
-      "ChildGeoNodeIds": {
-        "$type": "System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
-        "$values": []
-      },
-      "Name": "Twist",
-      "Position": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.0,
-        "Y": 0.0,
-        "Z": 0.0,
-        "Dimensions": 3
-      },
-      "Rotation": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 0.0,
-        "Y": 0.0,
-        "Z": 0.0,
-        "Dimensions": 3
-      },
-      "Scale": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 1.0,
-        "Y": 1.0,
-        "Z": 1.0,
-        "Dimensions": 3
-      },
-      "GuiNodePosition": {
-        "$type": "GameEngine.Vector, Wimapp3D",
-        "X": 27.0,
-        "Y": 240.0,
-        "Z": 0.0,
-        "Dimensions": 3
-      },
-      "AnimatableParameters": {
-        "$type": "System.Collections.Generic.List`1[[GameEngine.AnimatableParameter, Wimapp3D]], System.Private.CoreLib",
-        "$values": [
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.0
-              },
-              "93": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 2.83
-              }
-            }
-          },
-          {
-            "$type": "GameEngine.AnimatableParameter, Wimapp3D",
-            "KeyFrames": {
-              "$type": "System.Collections.Generic.SortedDictionary`2[[System.Int32, System.Private.CoreLib],[GameEngine.KeyFrame, Wimapp3D]], System.Collections",
-              "0": {
-                "$type": "GameEngine.KeyFrame, Wimapp3D",
-                "Value": 0.0
-              },
-              "93": {
                 "$type": "GameEngine.KeyFrame, Wimapp3D",
                 "Value": 0.0
               }
